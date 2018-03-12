@@ -103,4 +103,22 @@ public class Principal extends AppCompatActivity {
 
         cantManillas.requestFocus();
     }
+
+    public void cotizar(View v){
+        int cantidad = Integer.parseInt(cantManillas.getText().toString()),
+            resultado = 0;
+        String  divisa = tipoDivisa.getSelectedItem().toString(),
+                material = tipoMaterial.getSelectedItem().toString(),
+                dije = tipoDije.getSelectedItem().toString(),
+                metal = tipoMetal.getSelectedItem().toString();
+
+        valorCosto.setText("0");
+
+        if(validarCantidad()){
+           resultado = Metodos.calcular(cantidad, divisa, material, dije, metal);
+        }
+
+        valorCosto.setText("" + resultado);
+    }
+
 }

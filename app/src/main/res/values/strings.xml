@@ -40,4 +40,7 @@
 
     <string name="error_cantidad_vacio">Digite una cantidad</string>
     <string name="error_cantidad_cero">Digite una cantidad diferente de cero</string>
+    <string name="material">Material</string>
+    <string name="dije">Dije</string>
+    <string name="metal">Metal</string>
 </resources>
