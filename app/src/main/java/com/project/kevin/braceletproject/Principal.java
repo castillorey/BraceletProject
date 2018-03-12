@@ -78,7 +78,7 @@ public class Principal extends AppCompatActivity {
 
         if(cantManillas.getText().toString().isEmpty()){
             cantManillas.requestFocus();
-            cantManillas.setError(recursos.getString(R.string.error_cantidad_vacio));
+            cantManillas.setError( recursos.getString(R.string.error_cantidad_vacio));
             return false;
         }
 
@@ -105,20 +105,21 @@ public class Principal extends AppCompatActivity {
     }
 
     public void cotizar(View v){
-        int cantidad = Integer.parseInt(cantManillas.getText().toString()),
-            resultado = 0;
-        String  divisa = tipoDivisa.getSelectedItem().toString(),
-                material = tipoMaterial.getSelectedItem().toString(),
-                dije = tipoDije.getSelectedItem().toString(),
-                metal = tipoMetal.getSelectedItem().toString();
+        int cantidad = 1,
+            resultado = 0,
+            divisa = tipoDivisa.getSelectedItemPosition(),
+            material = tipoMaterial.getSelectedItemPosition(),
+            dije = tipoDije.getSelectedItemPosition(),
+            metal = tipoMetal.getSelectedItemPosition();
 
         valorCosto.setText("0");
 
         if(validarCantidad()){
+           cantidad = Integer.parseInt(cantManillas.getText().toString());
            resultado = Metodos.calcular(cantidad, divisa, material, dije, metal);
+           valorCosto.setText("" + resultado);
         }
 
-        valorCosto.setText("" + resultado);
     }
 
 }

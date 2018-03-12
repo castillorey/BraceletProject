@@ -8,9 +8,9 @@ public class Metodos {
 
 
 
-    public static int calcular(int cantidad,String tipoDivisa, String tipoMaterial, String tipoDije, String tipoMetal){
+    public static int calcular(int cantidad,int tipoDivisa, int tipoMaterial, int tipoDije, int tipoMetal){
         int resultado = 0;
-        if(tipoDivisa == "USD"){
+        if(tipoDivisa == 0){
             resultado = cantidad * (dolar(tipoMaterial,tipoDije,tipoMetal));
 
         }else{
@@ -19,49 +19,64 @@ public class Metodos {
         return resultado;
     }
 
-    public static int dolar(String tipoMaterial, String tipoDije, String tipoMetal){
+    public static int dolar(int tipoMaterial, int tipoDije, int tipoMetal){
         int resultado = 0;
-
-        if(tipoMaterial == "Cuero"){
-
-            if(tipoDije == "Martillo"){
-
-                if(tipoMetal == "Oro" || tipoMetal == "Oro Rosado"){
+        // Cuero
+        if(tipoMaterial == 0){
+            // Martilllo
+            if(tipoDije == 0){
+                // Oro o Oro rosa
+                if(tipoMetal == 0 || tipoMetal == 1){
                     resultado = 100;
-                }else if(tipoMetal == "Plata" ){
+                // Niquel
+                }else if(tipoMetal == 3){
                     resultado = 80;
-                }else if(tipoMetal == "Niquel"){
+                // Plata
+                }else if(tipoMetal == 2){
                     resultado = 70;
                 }
 
-            }else{
-
-                if(tipoMetal == "Oro" || tipoMetal == "Oro Rosado"){
+            }
+            // Ancla
+            if(tipoDije == 1){
+                // Oro o Oro rosa
+                if(tipoMetal == 0 || tipoMetal == 1){
                     resultado = 120;
-                }else if(tipoMetal == "Plata" ){
+                // Niquel
+                }else if(tipoMetal == 3 ){
                     resultado = 100;
-                }else if(tipoMetal == "Niquel"){
+                // Plata
+                }else if(tipoMetal == 2){
                     resultado = 90;
                 }
             }
-        }else{
-            if(tipoDije == "Martillo"){
-
-                if(tipoMetal == "Oro" || tipoMetal == "Oro Rosado"){
+        }
+        // Cuerda
+        if(tipoMaterial == 1){
+            // Martilllo
+            if(tipoDije == 0){
+                // Oro o Oro rosa
+                if(tipoMetal == 0 || tipoMetal == 1){
                     resultado = 90;
-                }else if(tipoMetal == "Plata" ){
+                // Niquel
+                }else if(tipoMetal == 3 ){
                     resultado = 70;
-                }else if(tipoMetal == "Niquel"){
+                // Plata
+                }else if(tipoMetal == 2){
                     resultado = 50;
                 }
 
-            }else{
-
-                if(tipoMetal == "Oro" || tipoMetal == "Oro Rosado"){
+            }
+            // Anlca
+            if(tipoDije == 1){
+                // Oro o Oro rosa
+                if(tipoMetal == 0 || tipoMetal == 1){
                     resultado = 110;
-                }else if(tipoMetal == "Plata" ){
+                // Niquel
+                }else if(tipoMetal == 3 ){
                     resultado = 90;
-                }else if(tipoMetal == "Niquel"){
+                // Plata
+                }else if(tipoMetal == 2){
                     resultado = 80;
                 }
             }
@@ -70,49 +85,64 @@ public class Metodos {
         return resultado;
     }
 
-    public static int peso(String tipoMaterial, String tipoDije, String tipoMetal){
+    public static int peso(int tipoMaterial, int tipoDije, int tipoMetal){
         int resultado = 0;
-
-        if(tipoMaterial == "Cuero"){
-
-            if(tipoDije == "Martillo"){
-
-                if(tipoMetal == "Oro" || tipoMetal == "Oro Rosado"){
+        // Cuero
+        if(tipoMaterial == 0){
+            // Martilllo
+            if(tipoDije == 0){
+                // Oro o Oro rosa
+                if(tipoMetal == 0 || tipoMetal == 1){
                     resultado = 300000;
-                }else if(tipoMetal == "Plata" ){
+                // Niquel
+                }else if(tipoMetal == 3){
                     resultado = 240000;
-                }else if(tipoMetal == "Niquel"){
+                // Plata
+                }else if(tipoMetal == 2){
                     resultado =  210000;
                 }
 
-            }else{
-
-                if(tipoMetal == "Oro" || tipoMetal == "Oro Rosado"){
+            }
+            // Ancla
+            if(tipoDije == 1){
+                // Oro o Oro rosa
+                if(tipoMetal == 0 || tipoMetal == 1){
                     resultado = 360000;
-                }else if(tipoMetal == "Plata" ){
+                // Niquel
+                }else if(tipoMetal == 3 ){
                     resultado = 300000;
-                }else if(tipoMetal == "Niquel"){
+                // Plata
+                }else if(tipoMetal == 2){
                     resultado = 270000;
                 }
             }
-        }else{
-            if(tipoDije == "Martillo"){
-
-                if(tipoMetal == "Oro" || tipoMetal == "Oro Rosado"){
+        }
+        // Cuerda
+        if(tipoMaterial == 1){
+            // Martilllo
+            if(tipoDije == 0){
+                // Oro o Oro rosa
+                if(tipoMetal == 0 || tipoMetal == 1){
                     resultado = 270000;
-                }else if(tipoMetal == "Plata" ){
+                // Niquel
+                }else if(tipoMetal == 3 ){
                     resultado = 210000;
-                }else if(tipoMetal == "Niquel"){
+                // Plata
+                }else if(tipoMetal == 2){
                     resultado = 150000;
                 }
 
-            }else{
-
-                if(tipoMetal == "Oro" || tipoMetal == "Oro Rosado"){
+            }
+            // Ancla
+            if(tipoDije == 1){
+                // Oro o Oro rosa
+                if(tipoMetal == 0 || tipoMetal == 1){
                     resultado = 330000;
-                }else if(tipoMetal == "Plata" ){
+                // Niquel
+                }else if(tipoMetal == 3 ){
                     resultado = 270000;
-                }else if(tipoMetal == "Niquel"){
+                // Plata
+                }else if(tipoMetal == 2){
                     resultado = 240000;
                 }
             }
