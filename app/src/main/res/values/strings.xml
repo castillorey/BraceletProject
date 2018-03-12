@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">BraceletProject</string>
+    <string name="titulo">XYZ Manillas</string>
+    <string name="descripcion">XYZ es una empresa dedicada a la creación y distribución de manillas de alta calidad a nivel nacional e internacional</string>
+    <string name="cotizar">Cotizar</string>
+    <string name="cantidadManillas">Cantidad de manillas</string>
+    <string name="calcular">Calcular</string>
+    <string name="dolar">USD</string>
+    <string name="peso">COP</string>
+    <string name="cuero">Cuero</string>
+    <string name="cuerda">Cuerda</string>
+    <string name="martillo">Martillo</string>
+    <string name="ancla">Ancla</string>
+    <string name="oro">Oro</string>
+    <string name="oro_rosado">Oro rosado</string>
+    <string name="plata">Plata</string>
+    <string name="niquel">Niquel</string>
+
+    <string-array name="tipoDivisa">
+        <item>@string/dolar</item>
+        <item>@string/peso</item>
+    </string-array>
+
+    <string-array name="tipoMaterial">
+        <item>@string/cuero</item>
+        <item>@string/cuerda</item>
+    </string-array>
+
+    <string-array name="tipoDije">
+        <item>@string/ancla</item>
+        <item>@string/martillo</item>
+    </string-array>
+
+    <string-array name="tipoMetal">
+        <item>@string/oro</item>
+        <item>@string/oro_rosado</item>
+        <item>@string/niquel</item>
+        <item>@string/plata</item>
+    </string-array>
+
+    <string name="error_cantidad_vacio">Digite una cantidad</string>
+    <string name="error_cantidad_cero">Digite una cantidad diferente de cero</string>
+</resources>
