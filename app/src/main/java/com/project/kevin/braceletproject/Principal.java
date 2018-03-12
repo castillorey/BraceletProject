@@ -52,10 +52,29 @@ public class Principal extends AppCompatActivity {
         ArrayAdapter<String> metalesAdapter = new ArrayAdapter(this,android.R.layout.simple_spinner_dropdown_item,metales);
         tipoMetal.setAdapter(metalesAdapter);
 
+
+        tipoDivisa.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+                switch(i){
+                    case 0:
+                        valorDivisa.setText(recursos.getString(R.string.dolar));
+                        break;
+                    case 1:
+                        valorDivisa.setText(recursos.getString(R.string.peso));
+                        break;
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
     }
 
-    public boolean validarDivisas(){
-        int opcion = tipoDivisa.getSelectedItemPosition();
+    public boolean validarCantidad(){
 
         if(cantManillas.getText().toString().isEmpty()){
             cantManillas.requestFocus();
@@ -70,5 +89,18 @@ public class Principal extends AppCompatActivity {
         }
 
         return true;
+    }
+
+    public void limpiar(View v){
+        valorCosto.setText("0");
+        valorDivisa.setText("USD");
+        cantManillas.setText("");
+
+        tipoDivisa.setSelection(0);
+        tipoMaterial.setSelection(0);
+        tipoDije.setSelection(0);
+        tipoMetal.setSelection(0);
+
+        cantManillas.requestFocus();
     }
 }
