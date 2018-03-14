@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BraceletProject</string>
+    <string name="titulo">Quote Bracelets</string>
+    <string name="cantidadManillas">Amount</string>
+    <string name="calcular">Quote</string>
+    <string name="dolar">USD</string>
+    <string name="peso">COP</string>
+    <string name="cuero">Leather</string>
+    <string name="cuerda">Rope</string>
+    <string name="martillo">Hammer</string>
+    <string name="ancla">Anchor</string>
+    <string name="oro">Gold</string>
+    <string name="oro_rosado">Pink gold</string>
+    <string name="plata">Silver</string>
+    <string name="niquel">Nickel</string>
+    <string name="error_cantidad_vacio">Enter a quantity</string>
+    <string name="error_cantidad_cero">Enter a different amount</string>
+    <string name="material">Material</string>
+    <string name="dije">Pendant</string>
+    <string name="metal">Metal</string>
+</resources>

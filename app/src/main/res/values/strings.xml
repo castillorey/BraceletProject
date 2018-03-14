@@ -1,8 +1,6 @@
 <resources>
     <string name="app_name">BraceletProject</string>
-    <string name="titulo">XYZ Manillas</string>
-    <string name="descripcion">XYZ es una empresa dedicada a la creación y distribución de manillas de alta calidad a nivel nacional e internacional</string>
-    <string name="cotizar">Cotizar</string>
+    <string name="titulo">Cotizar Manillas</string>
     <string name="cantidadManillas">Cantidad de manillas</string>
     <string name="calcular">Calcular</string>
     <string name="dolar">USD</string>
@@ -13,8 +11,9 @@
     <string name="ancla">Ancla</string>
     <string name="oro">Oro</string>
     <string name="oro_rosado">Oro rosado</string>
-    <string name="plata">Plata</string>
     <string name="niquel">Niquel</string>
+    <string name="plata">Plata</string>
+
 
     <string-array name="tipoDivisa">
         <item>@string/dolar</item>
@@ -43,4 +42,5 @@
     <string name="material">Material</string>
     <string name="dije">Dije</string>
     <string name="metal">Metal</string>
+    <string name="tituloFiltrar">Filtrar</string>
 </resources>

@@ -28,11 +28,11 @@ public class Metodos {
                 // Oro o Oro rosa
                 if(tipoMetal == 0 || tipoMetal == 1){
                     resultado = 100;
-                // Niquel
-                }else if(tipoMetal == 3){
-                    resultado = 80;
                 // Plata
                 }else if(tipoMetal == 2){
+                    resultado = 80;
+                // Niquel
+                }else if(tipoMetal == 3){
                     resultado = 70;
                 }
 
@@ -42,11 +42,11 @@ public class Metodos {
                 // Oro o Oro rosa
                 if(tipoMetal == 0 || tipoMetal == 1){
                     resultado = 120;
-                // Niquel
-                }else if(tipoMetal == 3 ){
-                    resultado = 100;
                 // Plata
                 }else if(tipoMetal == 2){
+                    resultado = 100;
+                // Niquel
+                }else if(tipoMetal == 3){
                     resultado = 90;
                 }
             }
@@ -58,11 +58,11 @@ public class Metodos {
                 // Oro o Oro rosa
                 if(tipoMetal == 0 || tipoMetal == 1){
                     resultado = 90;
-                // Niquel
-                }else if(tipoMetal == 3 ){
-                    resultado = 70;
                 // Plata
                 }else if(tipoMetal == 2){
+                    resultado = 70;
+                // Niquel
+                }else if(tipoMetal == 3){
                     resultado = 50;
                 }
 
@@ -72,11 +72,11 @@ public class Metodos {
                 // Oro o Oro rosa
                 if(tipoMetal == 0 || tipoMetal == 1){
                     resultado = 110;
-                // Niquel
-                }else if(tipoMetal == 3 ){
-                    resultado = 90;
                 // Plata
                 }else if(tipoMetal == 2){
+                    resultado = 90;
+                // Niquel
+                }else if(tipoMetal == 3){
                     resultado = 80;
                 }
             }
@@ -94,11 +94,11 @@ public class Metodos {
                 // Oro o Oro rosa
                 if(tipoMetal == 0 || tipoMetal == 1){
                     resultado = 300000;
-                // Niquel
-                }else if(tipoMetal == 3){
-                    resultado = 240000;
                 // Plata
                 }else if(tipoMetal == 2){
+                    resultado = 240000;
+                // Niquel
+                }else if(tipoMetal == 3){
                     resultado =  210000;
                 }
 
@@ -108,11 +108,11 @@ public class Metodos {
                 // Oro o Oro rosa
                 if(tipoMetal == 0 || tipoMetal == 1){
                     resultado = 360000;
-                // Niquel
-                }else if(tipoMetal == 3 ){
-                    resultado = 300000;
                 // Plata
                 }else if(tipoMetal == 2){
+                    resultado = 300000;
+                // Niquel
+                }else if(tipoMetal == 3){
                     resultado = 270000;
                 }
             }
@@ -124,11 +124,11 @@ public class Metodos {
                 // Oro o Oro rosa
                 if(tipoMetal == 0 || tipoMetal == 1){
                     resultado = 270000;
-                // Niquel
-                }else if(tipoMetal == 3 ){
-                    resultado = 210000;
                 // Plata
                 }else if(tipoMetal == 2){
+                    resultado = 210000;
+                // Niquel
+                }else if(tipoMetal == 3){
                     resultado = 150000;
                 }
 
@@ -138,11 +138,11 @@ public class Metodos {
                 // Oro o Oro rosa
                 if(tipoMetal == 0 || tipoMetal == 1){
                     resultado = 330000;
-                // Niquel
-                }else if(tipoMetal == 3 ){
-                    resultado = 270000;
                 // Plata
                 }else if(tipoMetal == 2){
+                    resultado = 270000;
+                // Niquel
+                }else if(tipoMetal == 3){
                     resultado = 240000;
                 }
             }
